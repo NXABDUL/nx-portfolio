@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <heaad>
+        <meta charset="utf-8">
+        <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>NX portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="script.js"></script>
+    </heaad>
+    <body>
+        
+        <nav>
+            <h1>NX Digital Studio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero" id="home">
+             <div class="hero-text">
+                <h2>Hello, I'm </h2>
+                <h1>Abdulmalik Lawal</h1>
+                <p id="typing-text"></p>
+
+                <div class="socials">
+
+                <a href="https://github.com/nx-digital-studio" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/Abdulmalik-Lawal-461048409" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://facebook.com/NX.Digital.Studio" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </div>
+
+                <button id="btn">view projects</button>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/profile.jpeg" alt="hero image">
+                </div>
+        </section>
+
+        
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-text">
+            <h2>about me</h2>
+            <p>
+                I am a passionate frontend developer and Software Engineering student focused on building modern, responsive and user-friendly
+                websites.</p>
+
+
+                <p>i enjoy transforming idea into clean digital experiences while continuously improving my skill in web development
+                    and UI design.
+                </p>
+                </div>
+                </div>
+        </section>
+        
+
+        <section class="academic">
+
+            <h2>Academic Foundation</h2>
+            <p class="sub-text">
+                Education and technical growth  journey
+            </p>
+
+            <div class="academic-card">
+                <h3>
+                    Bachelor of science in software  engineering
+                </h3>
+
+                <p class="major">
+                    Frontend Development & Web Technologies
+                </p>
+
+                <p>
+                    Abubakar Tafawa Balewa University (ATBU)
+                </p>
+
+                <span>2025-Present</span>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="projects" id="projects">
+            <h2>projects</h2>
+            <div class="project-card">
+                <h3>Greater Height Delivery Services</h3>
+                <p>
+                A logisic and delivery services platform focused on 
+                solving transportation and delivery challenges 
+                for businessses and indiividuals.
+            </p>
+            <a href="#">coming soon</a>
+
+            </div>
+        </section>
+
+       
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>contact me</h2>
+                <p>Email: Abdulmaliklawal6363@gmail.com</p>
+                <p>phone: +234 081 090 790 51</p>
+                <p>location: Nigeria</p>
+            </div>
+        
+        </section>
+
+        <footer>
+            <p>@ 2026 NX Digital Studio. All right reserved.</p>
+        </footer>
+        <script>
+            const text = "Frontend Developer & Software Engineering Student.";
+
+            let i = 0;
+
+            function typeWriter(){
+                if(i < text. length){
+                    document.getElementById("typing-text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 80);
+                }
+            }
+
+            typeWriter();
+            </script>
+        
+    </body>
+</html>
