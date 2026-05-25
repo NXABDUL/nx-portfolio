@@ -381,3 +381,19 @@ footer{
     animation: blink 0.7s infinite;
     color: #38bdf8
 }
+
+@media (max-width:480px){
+    .contact-container{
+        padding:30px 20px;
+        width:100%;
+
+    }
+
+
+    contact p{
+        font-size: 16px;
+        word-wrap: break-word;
+        overflow-wrap:break-word;
+        line-height: 1.6;
+    }
+}
